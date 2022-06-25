@@ -87,12 +87,16 @@ header{
     height: 8px;
 
     background-image: url("../icons/down-arrow.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
 /* MAIN  */
 
 main{
+
     width: 100%;
     height: auto;
     background-color: var(--off-white);
@@ -103,6 +107,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 320px;
 }
 
 .main-crypto-visualizer-container .background-img{
@@ -267,3 +272,122 @@ main{
     color: var(--warm-black);
 
 }
+
+/* description section  */
+
+.main-description{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--black);
+
+}
+
+.main-description h2{
+
+        font-size: 2.4rem;
+        line-height: 26px;
+        color: var(--just-white);
+    text-align: center;
+    margin-top: 64px;
+
+}
+.main-description > p{
+
+            font-size: 1.4rem;
+            line-height: 18px;
+            font-weight: 500;
+            color: #808080;
+            text-align: center;
+            margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+
+
+.main-description--article{
+    width: 288px;
+    height: auto;
+
+
+    background: #282623;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+.main-description--article{
+    width: 288px;
+    height: auto;
+
+
+    background: #282623;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+.main-description .batatabit-icon{
+    position: absolute;
+
+    top: calc(0% - 12.5px);
+    left: calc(50% - 20px);
+
+    width: 40px;
+    height: 24px;
+    background-image: url("/icons/batata.svg");
+
+
+}
+
+.main-description--article-content .article--icon{
+
+    width: 24px;
+    height: 24px;
+    margin: 10px 0;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.main-description--article .time{
+    background-image: url("/icons/clock.svg");
+}
+.main-description--article .eye{
+    background-image: url("/icons/eye.svg");
+}
+.main-description--article .usd{
+    background-image: url("/icons/dollar-sign.svg");
+}
+.main-description--article .check-icon{
+    background-image: url("/icons/check-circle.svg");
+}
+
+
+
+
+.main-description--article h3{
+    font-size: 1.8rem;
+    line-height: 18px;
+    font-weight: 700;
+    color: var(--just-white);
+    text-align: start;
+}
+.main-description--article p{
+    font-size: 1.4rem;
+    line-height: 18px;
+    font-weight: 500;
+    color: #808080;
+
+    margin-top: 12px;
+}
+
+
