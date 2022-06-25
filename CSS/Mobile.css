@@ -5,7 +5,9 @@
     4- visual
     5- otros
 */
-
+body{
+    min-width: 320px;
+}
 /*  Header */
 header{
     position: relative;
@@ -15,7 +17,7 @@ header{
 
     width: 100%;
     min-width: 30.2rem;
-    height: 33.4rem;
+    height: 295px;
 
     text-align: center;
 
@@ -25,7 +27,7 @@ header{
 .logo img{
     width: 15rem;
 
-    margin-top: 5rem;
+    margin-top: 38px;
 }
 
 .header--title-container{
@@ -57,7 +59,7 @@ header{
 .header--title-container .header--button{
     position: absolute;
     left: calc(50% - 11.5rem);
-    top: 27rem;
+
     align-self: center;
 
     display: flex;
@@ -65,7 +67,7 @@ header{
     align-items: center;
 
 
-    margin-top: 3.6rem ;
+    margin-top: 32px ;
     padding: 1.5rem;
     width: 229px;
     height: 48px;
@@ -311,18 +313,7 @@ main{
 
 .main-description--article{
     width: 288px;
-    height: auto;
-
-
-    background: #282623;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
-    border-radius: 4px;
-    margin-bottom: 16px;
-    padding: 16px;
-}
-
-.main-description--article{
-    width: 288px;
+    min-height: 152px;
     height: auto;
 
 
@@ -336,7 +327,7 @@ main{
 .main-description .batatabit-icon{
     position: absolute;
 
-    top: calc(0% - 12.5px);
+    top: calc(0% - 13px);
     left: calc(50% - 20px);
 
     width: 40px;
@@ -389,5 +380,12 @@ main{
 
     margin-top: 12px;
 }
+
+.main-description--article:nth-child(4){
+    margin-bottom: 48px;
+}
+
+
+/* section three   */
 
 
