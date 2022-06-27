@@ -335,7 +335,7 @@ main{
 
     width: 40px;
     height: 24px;
-    background-image: url("/icons/batata.svg");
+    background-image: url("../icons/batata.svg");
 
 
 }
@@ -353,16 +353,16 @@ main{
 }
 
 .main-description--article .time{
-    background-image: url("/icons/clock.svg");
+    background-image: url("../icons/clock.svg");
 }
 .main-description--article .eye{
-    background-image: url("/icons/eye.svg");
+    background-image: url("../icons/eye.svg");
 }
 .main-description--article .usd{
-    background-image: url("/icons/dollar-sign.svg");
+    background-image: url("../icons/dollar-sign.svg");
 }
 .main-description--article .check-icon{
-    background-image: url("/icons/check-circle.svg");
+    background-image: url("../icons/check-circle.svg");
 }
 
 
@@ -401,7 +401,7 @@ main{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("/img/bitcoinbaby2x.jpg");
+    background-image: url("../img/bitcoinbaby2x.jpg");
 }
 .comodin-section h2{
     text-align: center;
@@ -604,7 +604,7 @@ main{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("/icons/orange-right-arrow.svg");
+    background-image: url("../icons/orange-right-arrow.svg");
 
 }
 
