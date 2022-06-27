@@ -5,6 +5,9 @@
     4- visual
     5- otros
 */
+html{
+    scroll-behavior: smooth;
+}
 body{
     min-width: 320px;
 }
@@ -146,7 +149,7 @@ main{
     line-height: 18px;
     font-weight: 500;
 
-    color: #757575;
+    color: var(--soft-grey);
 
 }
 
@@ -220,7 +223,7 @@ main{
     line-height: 17px;
     text-align: center;
 
-    color: #757575;
+    color: var(--soft-grey);
 
 }
 
@@ -388,4 +391,218 @@ main{
 
 /* section three   */
 
+.comodin-section{
 
+    width: 100%;
+    min-width: 320px;
+    height:400px;
+
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/img/bitcoinbaby2x.jpg");
+}
+.comodin-section h2{
+    text-align: center;
+    padding-top: 64px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+
+    color: #FFFFFF;
+}
+
+/* planes section  */
+
+.planes-section{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height:auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--off-white);
+
+}
+
+
+
+
+.planes-section h2{
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 26px;
+    padding: 64px 16px 0 16px;
+
+    color: var(--warm-black);
+}
+
+.planes-section > p{
+    text-align: center;
+
+    font-size: 1.4rem;
+    line-height: 18px;
+    font-weight: 500;
+    color: var(--soft-grey);
+    padding: 24px 16px 0 16px;
+}
+
+/* slider cards */
+.planes-section--slider{
+    display: flex;
+
+
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+
+    overflow-x: scroll;
+    overscroll-behavior-x:contain;
+    scroll-snap-type: x proximity;
+
+}
+.planes-section--slider::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+}
+.planes-section--slider::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+}
+
+
+.planes-section--card-container{
+    position: relative;
+    scroll-snap-align: center;
+    height: 250px;
+    width: 188px;
+
+
+    margin: 48px 32px 64px 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: var(--just-white);
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 8px;
+}
+.planes-section--slider .planes-section--card-container:nth-child(1){
+    margin-left: 64px;
+}
+.planes-section--slider .planes-section--card-container:nth-child(3){
+    margin-right: 64px;
+}
+
+
+
+.card-container--recomendado{
+    position: absolute;
+    top: calc(0% - 16px);
+    left: calc(50% - 50px);
+
+    width: 100px;
+    height: 32px;
+    border-radius: 8px;
+    padding: 8px;
+
+    background: var(--bitcoin-orange);
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 15px;
+    color: var(--just-white);
+
+    text-align: center;
+
+}
+
+.planes-section--card-container p:nth-child(2){
+
+    width: auto;
+    margin-top: 32px;
+
+    font-size: 1.4rem;
+    line-height: 18px;
+    font-weight: 700;
+    color: var(--black);
+
+
+
+}
+
+.card-container--precio{
+    display: flex;
+    margin-top: 8px;
+    height: 56px;
+}
+
+/* signo de peso en precio */
+.card-container--precio span:nth-child(1){
+
+    padding-top: 12px;
+    font-size: 1.2rem;
+    line-height: 15px;
+    text-align: start;
+
+}
+.card-container--precio span:nth-child(2){
+
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 63px;
+    letter-spacing: -0.08em;
+    color: var(--black);
+
+}
+
+.planes-section--card-container p:nth-child(4){
+
+
+    margin: 14px 16px 16px 16px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 15px;
+    color: var(--soft-grey);
+
+}
+
+.card-container--button{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 151px;
+    height: 48px;
+    margin: 0 18px 24px 18px;
+
+    border: 2px solid #F7931A;
+    border-radius: 4px;
+
+    background: var(--off-white);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+
+}
+
+.card-container--button span:nth-child(2){
+
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/icons/orange-right-arrow.svg");
+
+}
