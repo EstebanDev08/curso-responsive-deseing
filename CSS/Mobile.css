@@ -107,6 +107,10 @@ main{
     background-color: var(--off-white);
 }
 
+
+
+
+
 .main-crypto-visualizer-container{
 
     display: flex;
@@ -152,16 +156,33 @@ main{
     color: var(--soft-grey);
 
 }
+/* slider crypto */
+
+.main-crypto-visualizer-slider{
+    display: flex;
+
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 64px;
+
+    overflow-x: scroll;
+    overscroll-behavior-x:contain;
+    scroll-snap-type: x proximity;
+
+}
 
 /*  tabla de precios */
 .main-crypto-visualizer-container--table {
 
     display: flex;
     flex-direction: column;
-
+    scroll-snap-align: center;
+    margin: 16px 32px 32px 64px;
 
     width: 246px;
-    margin-top: 40px;
+
 
     padding: 0 16px;
 
@@ -253,7 +274,7 @@ main{
     height: 31px;
     padding: 8px;
     margin-top: 16px;
-    margin-bottom: 64px;
+
 
     background-color: var(--soft-orange);
     border-radius: 8px;
@@ -277,6 +298,44 @@ main{
     color: var(--warm-black);
 
 }
+
+.main-crypto-visualizer-slider .table-comisiones{
+    width: 200px;
+    margin-right: 64px;
+}
+
+.main-crypto-visualizer-slider .table-comisiones h3{
+
+    color: #1A9AF7;
+
+}
+.main-crypto-visualizer-slider .table-comisiones .table ul{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+
+        align-items: center;
+
+        height: 40px;
+}
+
+
+.main-crypto-visualizer-slider .table-comisiones .table ul li:nth-child(2){
+
+    font-size: 1.4rem;
+    line-height: 17px;
+    text-align: center;
+
+
+    color: var(--soft-grey);
+
+}
+.main-crypto-visualizer-slider .table-comisiones  .main-crypto-visualizer-container--update-time{
+
+    background: var(--soft-blue);
+}
+
+
 
 /* description section  */
 
@@ -315,15 +374,18 @@ main{
 
 
 .main-description--article{
-    width: 288px;
+    min-width: 288px;
+    width: 75%;
+    max-width: 600px;
     min-height: 152px;
     height: auto;
 
+    margin: 0 auto 16px auto;
 
     background: #282623;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
     border-radius: 4px;
-    margin-bottom: 16px;
+
     padding: 16px;
 }
 
