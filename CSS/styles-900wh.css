@@ -1,0 +1,14 @@
+.planes-section--slider{
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    justify-content: center;
+
+}
+.main-description--article:nth-child(4){
+    margin-bottom: 16px;
+}
+.main-description--article-content {
+    margin-bottom: 30px;
+}

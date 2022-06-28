@@ -190,8 +190,9 @@ main{
     scroll-snap-align: center;
     margin: 16px 32px 32px 64px;
 
-    width: 246px;
-
+    min-width: 220px;
+    width: 220px;
+    max-width: 220px;
 
     padding: 0 16px;
 
@@ -383,13 +384,13 @@ main{
 
 
 .main-description--article{
-    min-width: 288px;
+    min-width: 260px;
     width: 75%;
-    max-width: 600px;
+    max-width: 440px;
     min-height: 152px;
     height: auto;
 
-    margin: 0 auto 16px auto;
+    margin: 16px;
 
     background: #282623;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
@@ -409,6 +410,14 @@ main{
     background-image: url("../icons/batata.svg");
 
 
+}
+.main-description--article-content{
+    display: flex;
+    width: auto;
+    max-width: 1100px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main-description--article-content .article--icon{
