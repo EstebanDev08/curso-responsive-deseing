@@ -488,16 +488,12 @@ main{
 /* planes section  */
 
 .planes-section{
-    position: relative;
-    width: 100%;
-    min-width: 320px;
-    height:auto;
-
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 320px;
 
-    background-color: var(--off-white);
+
 
 }
 
@@ -538,8 +534,8 @@ main{
     overscroll-behavior-x:contain;
     scroll-snap-type: x proximity;
 
-}
 
+}
 
 
 .planes-section--card-container{
@@ -548,10 +544,11 @@ main{
     height: 250px;
     min-width: 188px;
     width: 100%;
+    max-width: 240px;
+
 
 
     margin: 48px 32px 64px 32px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
