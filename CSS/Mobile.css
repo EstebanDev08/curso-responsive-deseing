@@ -173,6 +173,15 @@ main{
 
 }
 
+*::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+}
+
+
 /*  tabla de precios */
 .main-crypto-visualizer-container--table {
 
@@ -530,13 +539,7 @@ main{
     scroll-snap-type: x proximity;
 
 }
-.planes-section--slider::-webkit-scrollbar {
-    background-color: var(--soft-orange);
-    height: 3px;
-}
-.planes-section--slider::-webkit-scrollbar-thumb {
-    background-color: var(--bitcoin-orange);
-}
+
 
 
 .planes-section--card-container{
